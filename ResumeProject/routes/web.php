@@ -17,9 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//users portfolio general
 Route::get('/user', function() { return view('Userportfolio.portfolio');});
 
+//users platform eitehr on facebook,instagram,twitter and their contact number
 Route::get('/facebook', function () {return view('Userportfolio.facebookpage');});
+Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
+Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
+Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
 
 
  
