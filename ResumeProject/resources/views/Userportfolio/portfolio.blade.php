@@ -5,8 +5,6 @@ h {
   background-image: url('https://previews.123rf.com/images/shaycobs/shaycobs1211/shaycobs121100054/16464545-test-written-in-black-on-white-computer-keys-3d-illustration-isolated-background.jpg');
 }
 </style>
-<div class="row">
-        <div class="col">
             <div style="h">
             <h1> My Information</h1>
             <p> <strong> Image </strong></p>
@@ -38,7 +36,5 @@ h {
                                         On intership  2021 tester company as webdeveloper</p>
                                         On intership  2021 tester company as webdeveloper</p>
             </strong></p>
-</div>
-        </div>
-</div>
+
 @endsection

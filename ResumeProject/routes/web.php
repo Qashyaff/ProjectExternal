@@ -18,4 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function() { return view('Userportfolio.portfolio');});
+
+Route::get('/facebook', function () {return view('Userportfolio.facebookpage');});
+
+
  

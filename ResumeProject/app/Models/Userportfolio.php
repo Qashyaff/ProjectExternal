@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Userportfolio extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'id',
+        'name',
+        'email',
+        'password',
+    ];
+        
 }
