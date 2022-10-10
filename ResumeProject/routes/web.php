@@ -27,4 +27,20 @@ Route::get('/instagram', function () {return view('Userportfolio.instagrampage')
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
 
 
+// display 1 data of my personal portfolio
+
+//display list of my data personal porfolio
+
+//delete
+
+//updated
+
+//created
+
+//display 1 name data
+
+//dipslay list name data
+
+
+
  
