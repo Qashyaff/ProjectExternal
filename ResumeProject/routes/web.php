@@ -27,11 +27,14 @@ Route::get('/instagram', function () {return view('Userportfolio.instagrampage')
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
 Route::get('/searchuser', function () {return view('livewire.search-user');});
 
+// display 1 data of my personal 
 
+Route::get('/singleuser', function(){return view('user.single');});
 
-// display 1 data of my personal portfolio
 
 //display list of my data personal porfolio
+
+
 
 //delete
 
