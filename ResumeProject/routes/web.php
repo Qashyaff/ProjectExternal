@@ -25,6 +25,8 @@ Route::get('/facebook', function () {return view('Userportfolio.facebookpage');}
 Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
 Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+Route::get('/searchuser', function () {return view('livewire.search-user');});
+
 
 
 // display 1 data of my personal portfolio
