@@ -41,7 +41,7 @@
                     </tr>
                     @endforeach
                     </tbody>
-                </table>::
+                </table>
                 {{-- //nama objek sama mcm kt controller --}}
                 
             </div>
