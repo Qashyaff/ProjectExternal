@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Userportfolio;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Userportfolio;
+
+
 
 class UserportfolioController extends Controller
 {
@@ -14,7 +17,8 @@ class UserportfolioController extends Controller
      */
     public function index()
     {
-     
+        $user = User::all();
+        return view('user.listinguser',['users' => $user]);  
     }
 
     /**

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserportfolioController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,11 +27,15 @@ Route::get('/facebook', function () {return view('Userportfolio.facebookpage');}
 Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
 Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+
+
+///search users still in progress
 Route::get('/searchuser', function () {return view('livewire.search-user');});
 
 // display 1 data of my personal 
+Route::get('/user-listing', [UserportfolioController::class,'index']);
 
-Route::get('/singleuser', function(){return view('user.single');});
+Route::get('/livewire', function(){return view('livewire.counter');});
 
 
 //display list of my data personal porfolio
