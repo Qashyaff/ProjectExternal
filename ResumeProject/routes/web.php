@@ -32,8 +32,11 @@ Route::get('/contactnumber', function () {return view('Userportfolio.contactnumb
 ///search users still in progress
 Route::get('/searchuser', function () {return view('livewire.search-user');});
 
-// display 1 data of my personal 
+// displaylist data
 Route::get('/user-listing', [UserportfolioController::class,'index']);
+
+//display 1 data 
+Route::get('/users/{id}', [UserportfolioController::class, 'show']);
 
 Route::get('/livewire', function(){return view('livewire.counter');});
 
