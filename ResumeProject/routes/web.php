@@ -15,6 +15,15 @@ use App\Http\Controllers\UserportfolioController;
 |
 */
 
+/*
+SOCIAL MEDIA USER
+1. single data social media user
+2.Created a  platform from listing
+3.Read where the user can readable for their data in social media in short summary
+4.Update where the user can update their social media for latest one
+5.Delete where the user can delete their social media for latest 1 and to update new one
+*/
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,32 +37,34 @@ Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
 Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
 
-
+/* data FLOW for users & admin
+single data <- which the user can see their  data personal portfolio
+list data<- where admin can CRUD the data
+update data<- where the admin can update the name,brithday,address,working experience and the picture
+delete data<- where the admin can delete the name,birthday,address,working experience and the picture
+created data<- where the admin can add new users to register as new users
+*/
 ///search users still in progress
 Route::get('/searchuser', function () {return view('livewire.search-user');});
 
 // displaylist data
 Route::get('/user-listing', [UserportfolioController::class,'index']);
 
-//display 1 data 
+
+
+//display 1 data + list of my data personal porfolio
 Route::get('/users/{id}', [UserportfolioController::class, 'show']);
 
-Route::get('/livewire', function(){return view('livewire.counter');});
+
+//Route::get('/livewire', function(){return view('livewire.counter');});
 
 
-//display list of my data personal porfolio
 
 
 
 //delete
 
 //updated
-
-//created
-
-//display 1 name data
-
-//dipslay list name data
 
 
 
