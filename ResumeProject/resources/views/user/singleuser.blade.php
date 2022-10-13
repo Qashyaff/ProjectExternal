@@ -1,44 +1,22 @@
 @extends ('layout.mainlayout')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            @if(session('success'))
-            <p class="alert alert-success">{{ session('success') }}</p>
-            @endif
 
-            <div class="card">
-               <div class="card-header  pt-3 pb-3 ">{{ __('Portfolio Listing') }}
-                      {{-- <a href="#"><button class="btn btn-primary float-end"type="submit">Add new user</button></a>           --}}
-                </div>
-               
-                <table class="table ">
-                    <thead>
-                    <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                      
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {{-- display all product from database --}}
-                    @foreach ($users as $user)
-                    <tr>
-                     
-                        <td>{{ $user->name }}</td>
-                        <td>{{ $user->email }}</td>
-                       
-                          
-                    </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-                {{-- //nama objek sama mcm kt controller --}}
-                
-            </div>
-        </div>
-    </div>
-    
+
+<div class="row">
+    <div class="col-8"> 
+    <img src="https://swhs.org/wp-content/uploads/2019/10/Facebook-logo.png"width="50" 
+     height="50"  class="css-class" alt="alt text"> <a><strong>tester activities </strong></a>
+</img></div>
+    <div class="col-4"></div>
+    <table>
+        <tr>
+            <td><strong> Name1:</strong> </td>
+            <td>{{$user->name}}</td>
+            <td><strong> Name2:</strong> </td>
+            <td>{{$user->email}}</td>
+            <td><strong> Name2:</strong> </td>
+            <td> {{$user->created_at}}
+        </tr>
+    </table>
 </div>
 @endsection

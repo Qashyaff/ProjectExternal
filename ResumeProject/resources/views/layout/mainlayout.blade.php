@@ -35,7 +35,7 @@
             My Social media
           </a>
           <ul class="dropdown-menu">
-          <a class="dropdown-item" href="#"> <i class="ri-facebook-circle-fill"></i> Facebook </a>  
+          <li><a class="dropdown-item" href="#"> <i class="fi fi-brands-facebook">Facebook</i> </a>  
             <li><a class="dropdown-item" href="#">Instagram</a></li>
             <li><a class="dropdown-item" href="#">Telegram</a></li>
             <li><a class="dropdown-item" href="#">Twitter</a></li>
@@ -57,7 +57,7 @@
           
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Hello LuqmanQashyaff</a>
+          <a class="nav-link disabled">Hello User!</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

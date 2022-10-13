@@ -59,7 +59,8 @@ Route::get('/users/{id}', [UserportfolioController::class, 'show']);
 //Route::get('/livewire', function(){return view('livewire.counter');});
 
 
-
+//can do the grouping the element for route within same classes 
+//can do the grouping middleware to more shorcut for the get url
 
 
 //delete

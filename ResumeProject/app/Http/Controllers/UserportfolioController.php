@@ -52,7 +52,10 @@ class UserportfolioController extends Controller
     {
       $user = User::findOrFail($id);
      
-      dd($user); 
+      echo "<strong>Name</strong> :".$user->name."<br>";
+      echo "<strong>email</strong> :" .$user->email."<br>";
+      echo "<strong>created_at</strong> :" .$user->created_at."<br>";
+      //dd($user); 
     }
 
     /**
