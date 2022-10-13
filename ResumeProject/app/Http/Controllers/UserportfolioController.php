@@ -48,9 +48,11 @@ class UserportfolioController extends Controller
      * @param  \App\Models\Userportfolio  $userportfolio
      * @return \Illuminate\Http\Response
      */
-    public function show(Userportfolio $userportfolio)
+    public function show($id)
     {
-        //
+      $user = User::findOrFail($id);
+     
+      dd($user); 
     }
 
     /**
