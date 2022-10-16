@@ -60,7 +60,7 @@ Route::get('/user-listing', [UserportfolioController::class,'index']);
 
 
 //display 1 data + list of my data personal porfolio
-Route::get('/users/{id}', [UserportfolioController::class, 'indexsingle']);
+Route::get('/users/{id}', [UserportfolioController::class, 'show']);
 
 
 //Route::get('/livewire', function(){return view('livewire.counter');});

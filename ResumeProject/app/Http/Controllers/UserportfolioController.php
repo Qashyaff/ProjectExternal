@@ -22,12 +22,6 @@ class UserportfolioController extends Controller
     }
 
 
-    public function indexsingle($id)
-    {
-        $user = User::findOrFail($id);
-        return view('user.singleuser', ['users'=> $user]);
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -59,9 +53,11 @@ class UserportfolioController extends Controller
     {
       $user = User::findOrFail($id);
      
-      echo "<strong>Name</strong> :".$user->name."<br>";
-      echo "<strong>email</strong> :" .$user->email."<br>";
-      echo "<strong>created_at</strong> :" .$user->created_at."<br>";
+
+        return view('user.singleuser',['user'=>$user]);
+      //echo "<strong>Name</strong> :".$user->name."<br>";
+      //echo "<strong>email</strong> :" .$user->email."<br>";
+      //echo "<strong>created_at</strong> :" .$user->created_at."<br>";
       //dd($user); 
     }
 
