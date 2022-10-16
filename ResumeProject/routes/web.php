@@ -29,21 +29,26 @@ Route::get('/', function () {
 });
 
 //users portfolio general
-Route::get('/user', function() { return view('Userportfolio.portfolio');});
+
 
 //users platform eitehr on facebook,instagram,twitter and their contact number
-Route::get('/facebook', function () {return view('Userportfolio.facebookpage');});
-Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
-Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
-Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
-Route::get('/loginpage', function () {return view('layout.loginpage');});
-
-
-
 //mainhomepage
 Route::get('/homepage', function() {return view('homepage');});
+Route::namespace('User')->group(function() {
+    Route::get('/register', function() {return view('layout.register');});
+    Route::get('/loginpage', function () {return view('layout.loginpage');});
+    Route::get('/user', function() { return view('Userportfolio.portfolio');});
+    Route::get('/facebook', function () {return view('Userportfolio.facebookpage');});
+    Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
+    Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
+    Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+   
+});
+
+
+
 // register 
-Route::get('/register', function() {return view('layout.register');});
+
 /* data FLOW for users & admin
 single data <- which the user can see their  data personal portfolio
 list data<- where admin can CRUD the data
