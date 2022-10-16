@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-8"> 
-    <img src="https://swhs.org/wp-content/uploads/2019/10/Facebook-logo.png"width="50" 
+    <img src=""width="50" 
      height="50"  class="css-class" alt="alt text"> <a><strong>tester activities </strong></a>
 </img></div>
     <div class="col-4"></div>

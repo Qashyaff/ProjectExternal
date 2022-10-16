@@ -38,6 +38,12 @@ Route::get('/instagram', function () {return view('Userportfolio.instagrampage')
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
 Route::get('/loginpage', function () {return view('layout.loginpage');});
 
+
+
+//mainhomepage
+Route::get('/homepage', function() {return view('homepage');});
+// register 
+Route::get('/register', function() {return view('layout.register');});
 /* data FLOW for users & admin
 single data <- which the user can see their  data personal portfolio
 list data<- where admin can CRUD the data

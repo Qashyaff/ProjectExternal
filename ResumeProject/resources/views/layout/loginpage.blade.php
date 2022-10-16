@@ -47,7 +47,7 @@
     <div class="span12">
       <div class="login well well-small">
         <div class="center">
-          <img src="https://i.pinimg.com/originals/ff/c5/3a/ffc53a7a808b11990ffcdfac2396e7aa.jpg" alt="logo"> 
+          <img src="https://i0.wp.com/smashresume.com/wp-content/uploads/edd/2018/01/Creative-Cartoon-Resume.jpg?fit=1000%2C750&ssl=1" alt="logo"> 
         </div>
         <form action="/users/login" style="" class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
           <div class="control-group">
