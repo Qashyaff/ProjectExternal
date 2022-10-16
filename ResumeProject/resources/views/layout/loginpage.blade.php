@@ -34,7 +34,7 @@
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: Black;
 }
 </style>
 </head>
@@ -73,7 +73,7 @@
               <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe"> Remember Me?</label>
           </div>
           <div class="control-group">
-            <input class="btn btn-primary btn-large btn-block" type="submit" value="Sign in"> 
+            <input class="btn btn-light btn-large btn-block" type="submit" value="Sign in"> 
           </div>
         </form>
       </div><!--/.login-->
