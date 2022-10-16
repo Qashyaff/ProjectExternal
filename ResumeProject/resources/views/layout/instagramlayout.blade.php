@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="{{asset('/resources/css/app.css')}}" rel="stylesheet">
+<link href="resources/css/app.css" rel="stylesheet">
 	<title>Instagram Clone</title>
 </head>
 <body>

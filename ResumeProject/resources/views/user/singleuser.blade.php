@@ -9,14 +9,18 @@
 </img></div>
     <div class="col-4"></div>
     <table>
+  
         <tr>
+        @foreach ($users as $user)
             <td><strong> Name1:</strong> </td>
             <td>{{$user->name}}</td>
             <td><strong> Name2:</strong> </td>
             <td>{{$user->email}}</td>
             <td><strong> Name2:</strong> </td>
             <td> {{$user->created_at}}
+        @endforeach
         </tr>
+  
     </table>
 </div>
 @endsection

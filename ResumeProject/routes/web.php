@@ -36,6 +36,7 @@ Route::get('/facebook', function () {return view('Userportfolio.facebookpage');}
 Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
 Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
 Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+Route::get('/loginpage', function () {return view('layout.loginpage');});
 
 /* data FLOW for users & admin
 single data <- which the user can see their  data personal portfolio
@@ -53,7 +54,7 @@ Route::get('/user-listing', [UserportfolioController::class,'index']);
 
 
 //display 1 data + list of my data personal porfolio
-Route::get('/users/{id}', [UserportfolioController::class, 'show']);
+Route::get('/users/{id}', [UserportfolioController::class, 'indexsingle']);
 
 
 //Route::get('/livewire', function(){return view('livewire.counter');});

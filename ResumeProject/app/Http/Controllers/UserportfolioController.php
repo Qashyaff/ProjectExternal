@@ -21,6 +21,13 @@ class UserportfolioController extends Controller
         return view('user.listinguser',['users' => $user]);  
     }
 
+
+    public function indexsingle($id)
+    {
+        $user = User::findOrFail($id);
+        return view('user.singleuser', ['users'=> $user]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
