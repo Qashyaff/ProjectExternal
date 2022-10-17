@@ -1,7 +1,7 @@
 @extends ('layout.mainlayout')
 @section('content')
 
-<h3> this is my contact number  page</h3>
+<h3> Any information can contact from the information below</h3>
 
 
 

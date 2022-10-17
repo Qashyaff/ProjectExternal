@@ -33,7 +33,7 @@ Route::get('/', function () {
 
 //users platform eitehr on facebook,instagram,twitter and their contact number
 //mainhomepage
-Route::get('/homepage', function() {return view('homepage');});
+Route::get('/homepage', function () {return view('layout.homepage');});
 
 Route::namespace('User')->group(function() {
     Route::get('/register', function() {return view('layout.register');});
@@ -43,6 +43,8 @@ Route::namespace('User')->group(function() {
     Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
     Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
     Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+    
+   
    
 });
 
