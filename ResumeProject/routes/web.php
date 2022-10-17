@@ -34,6 +34,7 @@ Route::get('/', function () {
 //users platform eitehr on facebook,instagram,twitter and their contact number
 //mainhomepage
 Route::get('/homepage', function() {return view('homepage');});
+
 Route::namespace('User')->group(function() {
     Route::get('/register', function() {return view('layout.register');});
     Route::get('/loginpage', function () {return view('layout.loginpage');});
@@ -46,7 +47,10 @@ Route::namespace('User')->group(function() {
 });
 
 
-
+Route::namespace('Admin')->group(function() {
+    Route::get('/user-listing', [UserportfolioController::class,'index']);
+    Route::get('/users/{id}', [UserportfolioController::class, 'show']);
+});
 // register 
 
 /* data FLOW for users & admin
@@ -60,12 +64,12 @@ created data<- where the admin can add new users to register as new users
 Route::get('/searchuser', function () {return view('livewire.search-user');});
 
 // displaylist data
-Route::get('/user-listing', [UserportfolioController::class,'index']);
+
 
 
 
 //display 1 data + list of my data personal porfolio
-Route::get('/users/{id}', [UserportfolioController::class, 'show']);
+
 
 
 //Route::get('/livewire', function(){return view('livewire.counter');});
