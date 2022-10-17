@@ -13,7 +13,10 @@ class Userportfolio extends Model
         'name',
         'email',
         'password',
-        'phone_number'
+        'phonenumber',
+        'socialmedia',
+        'updated_at',
+        'created_at'
     ];
         
 }

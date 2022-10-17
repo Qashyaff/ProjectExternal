@@ -18,6 +18,8 @@
                         <th scope="col">No</th>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Phonenumber</th>
+
                       
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
@@ -30,6 +32,7 @@
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->name}}
                         <td>{{ $user->email }}</td>
+                        <td> {{$user->phone_number}}</td>
                      
                        
                         <td><a href="#"><button class="btn btn-primary"type="submit">Edit</button></a></td>

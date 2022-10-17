@@ -891,13 +891,34 @@ footer .social-links ul li a {
   color: #fefffe;
   display: block;
 }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
         </style>
 </head>
 <body>
     <!-- Main Navigation -->
+
 <nav class="main-nav" id="main-nav">
  <div class="content-wrapper-sm">
-  <a href="{{ route('homepage')}}" class="navbar-brand">Kuik Resume</a>
+  <a href="{{ route('homepage')}}" class="navbar-brand"> BR</a>
   <div id="menu-button">
    <div class="bar1"></div>
    <div class="bar2"></div>
@@ -943,7 +964,7 @@ footer .social-links ul li a {
   <h2 class="section-title">Explore New Pathways</h2>
   <p>CityScapes is great for any travel agency or tour agency, that wishes to showcase the focal points of a city. If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go
    ahead and download it for free from Github.</p>
-  <a href="https://github.com/Jesus-E-Rodriguez/cityscapes-landing-page" class="btn btn-outline-purple" target="_blank">Download</a>
+  <a href="https://github.com/Qashyaff/ProjectExternal/tree/alluqmanbranch" class="btn btn-outline-purple" target="_blank">Download</a>
  </div>
 
  <div class="content-wrapper" id="contact">

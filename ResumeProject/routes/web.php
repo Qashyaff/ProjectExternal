@@ -35,7 +35,18 @@ Route::get('/', function () {
 //mainhomepage
 Route::get('/homepage', function () {return view('layout.homepage');})->name('homepage');
 
+//task need to complete the project
+/*
+1.design page user
+2.generate fake data
+3.CRUD fake data
+4.authethication
+5. simplfied the coding
+*/
 Route::namespace('User')->group(function() {
+
+    //load page will continue to homepage within 1 click by users
+    Route::get('/loadpage', function() {return view('Userportfolio.loading');})->name('loading');
     Route::get('/register', function() {return view('layout.register');})->name ('register');
     Route::get('/loginpage', function () {return view('layout.loginpage');})->name('login');
     Route::get('/user', function() { return view('Userportfolio.portfolio');})->name('user');
@@ -43,17 +54,14 @@ Route::namespace('User')->group(function() {
     Route::get('/twitter', function () {return view('Userportfolio.twitterpage');})->name('twitter');
     Route::get('/instagram', function () {return view('Userportfolio.instagrampage');})->name('instagram');
     Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');})->name('contactnumber');
-    
-   
+
    
 });
 // middleware admin = login admin
 // 
 
-Route::namespace('Admin')->group(function() {
-    Route::get('/user-listing', [UserportfolioController::class,'index']);
+    Route::get('/userlisting', [UserportfolioController::class,'index']);
     Route::get('/users/{id}', [UserportfolioController::class, 'show']);
-});
 // register 
 
 /* data FLOW for users & admin
