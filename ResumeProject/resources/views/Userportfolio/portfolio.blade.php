@@ -1,14 +1,7 @@
 @extends ('layout.mainlayout')
 @section('content')
-<style>
-h {
-  background-image: url('https://previews.123rf.com/images/shaycobs/shaycobs1211/shaycobs121100054/16464545-test-written-in-black-on-white-computer-keys-3d-illustration-isolated-background.jpg');
-}
-q {
-  background-color: lightblue;
-}
-</style>
-            <div style="q">
+
+            
             <h1> My Information</h1>
             <p> <strong> Image </strong></p>
             <br><br><br><br>
@@ -26,7 +19,7 @@ q {
                 5.ts</p>
             </strong> </p>
 
-            <p> <strong> Achievement    : Tester dean list on 2021 sem 2</strong> </p>
+            <p> <strong> Achievement    : tester on sem 2</strong> </p>
 
             <p> <strong> Project        : </p>
             1.system_ordering</p>
@@ -39,6 +32,5 @@ q {
                                         On intership  2021 tester company as webdeveloper</p>
                                         On intership  2021 tester company as webdeveloper</p>
             </strong></p>
-</div>
-</style>
+
 @endsection

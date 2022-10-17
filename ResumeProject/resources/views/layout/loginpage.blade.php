@@ -69,8 +69,8 @@
 <button class="btn"><i class="fa fa-github"></i></button>
           </div>
           <div class="control-group">
-            <label id="remember-me">
-              <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe"> Remember Me?</label>
+            <label id="remember password">
+              <input type="checkbox" name="data[User][remember_password]" value="1" id="UserRememberMe"> Remember password</label>
           </div>
           <div class="control-group">
             <input class="btn btn-light btn-large btn-block" type="submit" value="Sign in"> 

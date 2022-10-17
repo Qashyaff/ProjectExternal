@@ -27,9 +27,10 @@
                     {{-- display all product from database --}}
                     @foreach ($users as $user)
                     <tr>
-                        <td>{{ $user->id }}
-                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->id }}</td>
+                        <td>{{ $user->name}}
                         <td>{{ $user->email }}</td>
+                     
                        
                         <td><a href="#"><button class="btn btn-primary"type="submit">Edit</button></a></td>
                         <td>

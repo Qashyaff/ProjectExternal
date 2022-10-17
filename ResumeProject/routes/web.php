@@ -33,21 +33,22 @@ Route::get('/', function () {
 
 //users platform eitehr on facebook,instagram,twitter and their contact number
 //mainhomepage
-Route::get('/homepage', function () {return view('layout.homepage');});
+Route::get('/homepage', function () {return view('layout.homepage');})->name('homepage');
 
 Route::namespace('User')->group(function() {
-    Route::get('/register', function() {return view('layout.register');});
-    Route::get('/loginpage', function () {return view('layout.loginpage');});
-    Route::get('/user', function() { return view('Userportfolio.portfolio');});
-    Route::get('/facebook', function () {return view('Userportfolio.facebookpage');});
-    Route::get('/twitter', function () {return view('Userportfolio.twitterpage');});
-    Route::get('/instagram', function () {return view('Userportfolio.instagrampage');});
-    Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');});
+    Route::get('/register', function() {return view('layout.register');})->name ('register');
+    Route::get('/loginpage', function () {return view('layout.loginpage');})->name('login');
+    Route::get('/user', function() { return view('Userportfolio.portfolio');})->name('user');
+    Route::get('/facebook', function () {return view('Userportfolio.facebookpage');})->name('facebook');
+    Route::get('/twitter', function () {return view('Userportfolio.twitterpage');})->name('twitter');
+    Route::get('/instagram', function () {return view('Userportfolio.instagrampage');})->name('instagram');
+    Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');})->name('contactnumber');
     
    
    
 });
-
+// middleware admin = login admin
+// 
 
 Route::namespace('Admin')->group(function() {
     Route::get('/user-listing', [UserportfolioController::class,'index']);

@@ -4,786 +4,976 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMEPAGE</title>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-  body
-{
-  margin:0;
-  overflow-X:hidden;
-  font-family:"Raleway","Roboto","Helvetica",sans-serif;
-  -webkit-font-smoothing:antialiased;
-  -moz-font-smoothing:antialiased;
-  -ms-font-smoothing:antialiased;
-  font-smoothing:antialiased;
-  background:rgba(18,18,26,1);
-  background-image:url('http://artlantis-media.ru/static/img/0000/0002/7260/27260842.qvpm616fga.png');
-  background-blend-mode:overlay;
-  background-size:15%;
-}
-::-webkit-scrollbar
-{
-  display:none;
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="https://www.freeiconspng.com/thumbs/resume-icon-png/resume-icon-png-15.png">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+.container, .container-sm, .container-md {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
-/*Grid Wrapper*/
- 
-#home
-{
-  color:#aaaaaf;
-  width:100%;
-  height:100%;
-  position:relative;
-  padding:100px;
-  display:block;
-  transition:transform 0.5s ease-in-out;
-}
-#home>section
-{
-  position:relative;
-}
-#home>.header>div
-{
-  position:relative;
-  display:inline-block;
-  margin-right:25px;
-  vertical-align:middle;
-  text-shadow:0px 5px 10px rgba(0,0,0,1);
-}
-#home>.pagetag
-{
-  position:absolute;
-  top:10px;
-  left:10px;
-  padding:10px 15px;
-  font-size:0.8em;
-  color:rgba(96,78,177,1);
-  background:rgba(0,0,0,0.1);
-}
-/*Heading*/
-#home .logo
-{
-  width:200px;
-  height:200px;
-  border-radius:50%;
-  background-image:url("http://twths.org/wp/wp-content/uploads/2015/12/coldplay-a-head-full-of-dreams-album-art-560x560.jpg");
-  background-size:100%;
-  background-position:50% 50%;
-  box-shadow:0px 0px 20px -10px rgba(0,0,0,0.5);
-}
-#home h2
-{
-  font-weight:300;
-  letter-spacing:0.07em;
-  margin-left:-20px;
-}
-#home h5
-{
-  margin-top:-20px;
-  font-weight:400;
-  letter-spacing:1.9em;
-}
-#home h2>span:first-child
-{
-  font-size:3em;
-}
-#home h2>span:nth-child(2)
-{
-  font-size:2em;
-  margin-left:-0.2em;
-  font-weight:400;
-}
-#grid_wrapper
-{
-  width:100%;
-  display:inline-block;
-  margin-top:60px;
-  box-sizing:border-box;
-  padding:0px 20px;
-  margin-left:-100px;
-  position:relative;
-}
-#grid_wrapper.init>card
-{
-  transform:scale(0);
-}
-#grid_wrapper>card
-{
-  display:block;
-  width:25%;
-  height:200px;
-  float:left;
-  transition:transform 0.3s cubic-bezier(0,0,0,1);
-  padding:20px;
-  box-sizing:border-box;
-}
-#grid_wrapper>card>div,#content_wrapper>.clone
-{
-  color:#aaaaaf;
-  cursor:pointer;
-  width:100%;
-  height:100%;
-  position:relative;
-  transition:box-shadow 0.3s;
-  overflow:hidden;
-  border:1px solid rgba(66,76,119,0.1);
-  box-shadow:0px 20px 50px 0px rgba(0,0,0,0.2);
-}
-#grid_wrapper>card>div.active
-{
-  opacity:0;
-}
-#grid_wrapper>card>div:hover
-{
-  box-shadow:0px 30px 60px 0px rgba(0,0,0,0.25);
-}
-#grid_wrapper>card>div:before,#content_wrapper>.clone:before
-{
-  width:100%;
-  height:100%;
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  background-size:100%;
-  background-position:50% 50%;
-  background-blend-mode:overlay;
-  background-image:url("https://emersonkeeling.files.wordpress.com/2015/12/ahfod.gif");
-  background-color:rgba(43,26,119,0.25);
-  transition:all 0.2s;
-  -webkit-filter:blur(3px);
-  -moz-filter:blur(3px);
-  filter:blur(3px);
-  -ms-filter:blur(3px);
-}
-#grid_wrapper>card>div>span,#content_wrapper>.clone>span
-{
-  width:100%;
-  height:50px;
-  margin-top:-25px;
-  top:50%;
-  position:absolute;
-  line-height:50px;
-  display:block;
-  text-align:center;
-  font-size:1.5em;
-  opacity:1;
-}
-/*End of Section*/
-
-/*NavBar Style*/
-/*Comes up only when you're open in a section*/
-nav.main
-{
-  overflow-X:auto;
-  overflow-Y:visible;
-  z-index:+25;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:55px;
-  display:block;
-  white-space:nowrap;
-}
-body:after,#footer:after,#footer:before
-{
-  /* background: linear-gradient(90deg, rgba(190,78,114,1) 0%, rgba(254,117,98,1) 33.33%, rgba(86,72,105,1) 66.66%,  rgba(126,70,99,1) 100%) */;
-  background-image: linear-gradient(90deg, rgba(107,208,228,1) 0%, rgba(96,78,177,1) 33%, rgba(200,142,102,1) 66%, rgba(201,85,169,1) 100%); /* w3c */
-  content:"";
-  position:fixed;
-  width:100%;
-  top:0px;
-  left:0px;
-  height:5px;
-  z-index:+30;
-}
-nav.main.inactive>.tab
-{
-  transform:rotateX(90deg) translateY(-25px);
-}
-nav.main>.tab
-{
-  transform-origin:50% 0% 0px;
-  background:#fff;
-  box-sizing:border-box;
-  /* border-top:5px solid; */
-  font-weight:600;
-  font-size:0.9em;
-  color:#161725;
-  display:inline-block;
-  width:15%;
-  text-align:center;
-  line-height:45px;
-  height:100%;
-  border-top:rgba(0,0,0,0.5) 5px solid;
-  position:relative;
-  cursor:pointer;
-  overflow:hidden;
-  transition:transform 0.5s cubic-bezier(0,0,0,1);
-}
-nav.main>.tab.active
-{
-  z-index:+5000;
-}
-nav.main>.tab.active>span
-{
-  background:#d5d5d5;
-}
-nav.main>.tab>span
-{
-  width:100%;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  height:100%;
-  display:block;
-  transform:line-height 0.2s;
-}
-nav.main>.tab:not(.active)>span:hover
-{
-  background:#dadada;
-}
-nav.main>.tab:after
-{
-  content:"";
-  top:0;
-  right:0;
-  position:absolute;
-  border-top:0px solid transparent;
-  border-bottom:50px solid transparent;
-  border-right:0px solid rgba(0,0,0,0.05);
-  transition:all 0.2s;
-}
-nav.main>.tab:hover:after
-{
-  content:"";
-  right:0;
-  position:absolute;
-  border-top:0px solid transparent;
-  border-bottom:55px solid transparent;
-  border-right:10px solid rgba(0,0,0,0.1);
-}
-/*End of Section*/
-
-/*Ripple Styling*/
-.ripple
-{
-  position:fixed;
-  animation:ripple 1s 1 ease-out;
-  background:rgba(0,0,0,0.5);
-  margin:-250px;
-  width:500px;
-  height:500px;
-  transform:scale(10);
-  position:absolute;
-  border-radius:50%;
-  opacity:0;
-}
-  
-/*One for the BIIIIG ONE!*/
-
-.mega.ripple
-{
-  border-radius:50%;
-  background:rgba(255,255,255,0.1);
-  opacity:1;
-}
-@keyframes ripple
-{
-  0%{
-    opacity:1;
-    transform:scale(0);
+@media (min-width: 576px) {
+  .container, .container-sm, .container-md {
+    max-width: 540px;
   }
 }
-/*End of Section*/
 
-/*This one Wraps content of the tabs*/
-#content_wrapper.inactive
-{
- pointer-events:none; 
-}
-#content_wrapper
-{
-  position:fixed;
-  z-index:+20;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  display:block;
-  perspective:1000px;
-}
-#content_wrapper>div.content
-{
-  z-index:+50;
-  position:fixed;
-  top:0;
-  width:100%;
-  height:100%;
-  left:0;
-  display:block;
-  box-sizing:border-box;
-  padding:5%;
-  padding-top:100px;
-}
-#content_wrapper>div.clone.deactivate
-{
-   background:linear-gradient(#14151a,#161725); 
-}
-#content_wrapper>div.clone.deactivate>span{
-  font-size:50em;
-  opacity:0;
-  animate:blow 0.5s 0s cubic-bezier(0,0,0,1);
-}
-@keyframes blow
-{
-  to{
-    font-size:50em;
-    opacity:0;
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
   }
 }
-#content_wrapper>div.clone.deactivate:before
-{
-  animation:fadeOut 0.25s 0s 1 cubic-bezier;
-  opacity:0;
-}
-@keyframes fadeOut
-{
-  from{
-    opacity:1;
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md {
+    max-width: 960px;
   }
 }
-#content_wrapper>div.clone
-{
-  width:100%;
-  height:100%;
-  transform-origin:50% 50%;
-  position:absolute;
-  transform-origin:50% 50%;
-  transform:translate(-50%,-50%) rotateY(180deg);
-  animation:flipOpen 0.5s 0s 1 cubic-bezier(0,0,0,1);
-}
 
-#content_wrapper.inactive>div.clone
-{
-  animation:flipClose 0.7s 0s 1 cubic-bezier(0,0,0,1);
-  transform:translate(-50%,-50%);
-  position:absolute;
-}
-@keyframes flipOpen
-{
-  from{
-    transform:translate(-50%,-50%);
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md {
+    max-width: 1140px;
   }
 }
-@keyframes flipClose
-{
-  from{
-    transform:translate(-50%,-50%) rotateY(180deg);
+
+.container-sm {
+  max-width: 640px;
+}
+
+.container-md {
+  max-width: 960px;
+}
+
+/* A flex grid to be used as a backup in case display grid
+   is not supported in the browser. */
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.grid .grid-col-sm-1, .grid .grid-col-sm-2, .grid .grid-col-sm-3, .grid .grid-col-sm-4, .grid .grid-col-sm-5, .grid .grid-col-sm-6, .grid .grid-col-sm-7, .grid .grid-col-sm-8, .grid .grid-col-sm-9, .grid .grid-col-sm-10, .grid .grid-col-sm-11, .grid .grid-col-sm-12, .grid .grid-col-sm,
+.grid .grid-col-sm-auto, .grid .grid-col-md-1, .grid .grid-col-md-2, .grid .grid-col-md-3, .grid .grid-col-md-4, .grid .grid-col-md-5, .grid .grid-col-md-6, .grid .grid-col-md-7, .grid .grid-col-md-8, .grid .grid-col-md-9, .grid .grid-col-md-10, .grid .grid-col-md-11, .grid .grid-col-md-12, .grid .grid-col-md,
+.grid .grid-col-md-auto, .grid .grid-col-lg-1, .grid .grid-col-lg-2, .grid .grid-col-lg-3, .grid .grid-col-lg-4, .grid .grid-col-lg-5, .grid .grid-col-lg-6, .grid .grid-col-lg-7, .grid .grid-col-lg-8, .grid .grid-col-lg-9, .grid .grid-col-lg-10, .grid .grid-col-lg-11, .grid .grid-col-lg-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .grid .grid-col-sm-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .grid .grid-col-sm-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-sm-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-sm-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-sm-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-sm-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-sm-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-sm-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-sm-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-sm-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-sm-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-sm-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
-#content_wrapper>div.content>section.active
-{
-  opacity:1;
-  transform:none;
-}
-#content_wrapper>div.content>section{
-  color:#aaa;
-  position:absolute;
-  top:100px;
-  left:5%;
-  opacity:0;
-  transition:all 0.5s;
-  transform:translateY(-100px);
-}
-#content_wrapper.inactive>button
-{
-  opacity:0;
-}
 
-#content_wrapper>button
-{
-  z-index:+100;
-  transition:opacity 0.2s 1s;
-  padding:20px;
-  font-family:"FontAwesome";
-  color:white;
-  font-size:1.2em;
-  background:none;
-  outline:none;
-  border:none;
-  position:fixed;
-  top:60px;
-  right:0;
-  cursor:pointer;
-}
-/*End of Section*/
-
-/*Footer Design*/
-#footer
-{
-  font-size:0.9em;
-  position:relative;
-  margin-top:200px;
-  width:100%;
-  height:70px;
-  text-align:center;
-  color:rgba(255,255,255,0.3);
-  z-index:+15;
-}
-#footer:before
-{
-  position:absolute;
-  top:0;
-  height:3px;
-}
-#footer:after
-{
-  position:absolute;
-  bottom:1px;
-  top:unset;
-  height:3px;
-}
-/*End of Section*/
-</style>
-<!--JAVA SCRIPT FOR HOMEPAGE -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> </script>
-</head>
-<script>
-    $('nav.main>.tab').each(function(index){
-  $(this).css({'transition-delay':((index*0.1)+'s')}); 
-});
-
-$('#grid_wrapper>card').each(function(index){
-  $(this).css({'transition-delay':((index*0.05)+'s')}); 
-});
-$('document').ready(function(){
-  $('#grid_wrapper').removeClass('init');
-});
-//$('nav.main').removeClass('inactive');
-$('nav.main>.tab').click(function(e){
-  var $eq=$('nav.main>.tab').index($(this));
-  var $ripple=$("<div/>");
-  $ripple.addClass('ripple');
-  $ripple.css({left:e.clientX-$(this).offset().left,top:e.clientY-$(this).offset().top});
-  $(this).append($ripple);
-  setTimeout(function(){
-    $ripple.remove();
-  },1000);
-  var $megaRipple=$("<div/>");
-  $megaRipple.addClass('ripple');
-  $megaRipple.addClass('mega');
-  $megaRipple.css({
-                  left:e.clientX,
-                  top:e.clientY,
-                  background:$(this).css('border-color')
-                  });
-  $('#content_wrapper>div.content').append($megaRipple);
-  setTimeout(function(){
-    $megaRipple.animate({opacity:0},1000);
-    setTimeout(function(){
-      $megaRipple.remove();
-    },1000);
-  },500);
-  $('nav.main').find('.active').removeClass('active');
-  $(this).addClass('active');
-  $('#grid_wrapper>card>div').removeClass('active');
-  var $card=$('#grid_wrapper>card').eq($eq).find('div');
-  $('#content_wrapper>div.clone>span').html($card.find('span').html());
-  $card.addClass('active');
-  $('#content_wrapper>div.content>section').removeClass('active');
-  $('#content_wrapper>div.content>section').eq($eq).addClass('active');
-});
-
-hLists=document.getElementsByClassName('hList');
-for(var i=0; i<hLists.length;i++)
-  {
-      hLists[i].leftScrollTarget=0;
-      hLists[i].onmousewheel=function(event) {
-      temp=this.leftScrollTarget-(event.wheelDelta*10);       if(temp<=0)
-        this.leftScrollTarget=0;
-      else if(temp>=this.scrollWidth-this.clientWidth)
-        this.leftScrollTarget = this.scrollWidth-this.clientWidth;
-      else 
-        this.leftScrollTarget = temp;
-        event.preventDefault();
-      };
+@media (min-width: 768px) {
+  .grid .grid-col-md-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
-function render(){
-  window.requestAnimationFrame(render);
-  for(var i=0;i<hLists.length;i++)
-    {
-      hLists[i].scrollLeft+=(hLists[i].leftScrollTarget-hLists[i].scrollLeft)/10;
+  .grid .grid-col-md-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-md-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-md-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-md-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-md-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-md-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-md-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-md-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid .grid-col-lg-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .grid .grid-col-lg-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-lg-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-lg-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-lg-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-lg-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-lg-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-lg-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-lg-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-lg-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* If the grid is supported then I will use that, if not then
+the display flex can serve as a backup. */
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
+    margin-right: none;
+    margin-left: none;
+  }
+  .grid > [class^="grid-col-"] {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none;
+  }
+  .grid .grid-col-sm-1, .grid .grid-col-sm-2, .grid .grid-col-sm-3, .grid .grid-col-sm-4, .grid .grid-col-sm-5,
+  .grid .grid-col-sm-6, .grid .grid-col-sm-7, .grid .grid-col-sm-8, .grid .grid-col-sm-9, .grid .grid-col-sm-10,
+  .grid .grid-col-sm-11, .grid .grid-col-sm-12, .grid .grid-col-md-1, .grid .grid-col-md-2, .grid .grid-col-md-3,
+  .grid .grid-col-md-4, .grid .grid-col-md-5, .grid .grid-col-md-6, .grid .grid-col-md-7, .grid .grid-col-md-8,
+  .grid .grid-col-md-9, .grid .grid-col-md-10, .grid .grid-col-md-11, .grid .grid-col-md-12, .grid .grid-col-lg-1,
+  .grid .grid-col-lg-2, .grid .grid-col-lg-3, .grid .grid-col-lg-4, .grid .grid-col-lg-5, .grid .grid-col-lg-6,
+  .grid .grid-col-lg-7, .grid .grid-col-lg-8, .grid .grid-col-lg-9, .grid .grid-col-lg-10, .grid .grid-col-lg-11,
+  .grid .grid-col-lg-12 {
+    grid-column: span 12;
+  }
+  @media (min-width: 544px) {
+    .grid .grid-col-sm-12 {
+      grid-column: span 12;
     }
-}render();
-var sections=document.getElementById('home').getElementsByTagName('section');
-for(var i=0;i<sections.length;i++)
-  {
-    sections[i].transY=0;
+    .grid .grid-col-sm-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-sm-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-sm-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-sm-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-sm-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-sm-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-sm-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-sm-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-sm-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-sm-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-sm-1 {
+      grid-column: span 1;
+    }
   }
-window.onscroll=function(e){
-  for(var i=0;i<sections.length;i++){
-    sections[i].transY=(i)*parseInt(window.scrollY)
-    sections[i].style.transform='translateY(-'+sections[i].transY+'px)';
+  @media (min-width: 768px) {
+    .grid .grid-col-md-12 {
+      grid-column: span 12;
+    }
+    .grid .grid-col-md-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-md-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-md-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-md-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-md-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-md-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-md-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-md-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-md-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-md-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-md-1 {
+      grid-column: span 1;
+    }
+  }
+  @media (min-width: 992px) {
+    .grid .grid-col-lg-12 {
+      grid-column: span 12;
+    }
+    .grid .grid-col-lg-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-lg-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-lg-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-lg-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-lg-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-lg-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-lg-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-lg-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-lg-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-lg-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-lg-1 {
+      grid-column: span 1;
+    }
   }
 }
 
-$('#grid_wrapper>card>div').click(function(){
-  
-  //Get index of active section
-  var $eq=$('#grid_wrapper>card').index($(this).parent());
-  
-  //clone the tab and add to content_wrapper
-  var $clone = $(this).clone();
-  $clone.addClass('clone');
-  $('#content_wrapper').append($clone);
-  setTimeout(function(){
-    $clone.addClass('deactivate');
-  },250);
-  
-  //Make overlay visible and animate to full size
-$('#content_wrapper').removeClass('inactive');
-  $('#content_wrapper>div.clone').css({
-    top:$(this).offset().top - $(window).scrollTop() + ($(this).height()/2),
-    left:$(this).offset().left - $(window).scrollLeft() + ($(this).width()/2),
-    height:$(this).height(),
-    width:$(this).width()
-  }).show().animate({
-    top:'50%',
-    left:'50%',
-    width:'100%',
-    height:'100%'
-  },500);
-  
-  //Add active class to clicked tab to make it disappear
-  $('#grid_wrapper>card>div').removeClass('active');
-  $(this).addClass('active');
-  
-  //500 ms after click  
-  //overlay is fullSize
-  setTimeout(function(){
-    
-    //Show menu
-    $('nav').removeClass('inactive');
-    
-    //Activate tab on menu
-    $('nav.main>.tab').removeClass('active');
-    $('nav.main>.tab').eq($eq).addClass('active');
-    document.querySelectorAll('nav.main>.tab.active')[0].scrollIntoView();
-    
-  },500);
-  
-  //700ms after click 
-  //Menu is visible
-  setTimeout(function(){
-    
-    //Animate corresponding section content to life
-    $('#content_wrapper>div.content>section').removeClass('active');
-    $('#content_wrapper>div.content>section').eq($eq).addClass('active');
-  
-  },700);
- 
-});
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-$('#content_wrapper>.close').click(function(){
-  $('nav.main').addClass('inactive');
-  $('#content_wrapper>div.content>section').removeClass('active');
-  setTimeout(function(){
-    $('#content_wrapper>div.clone').removeClass('deactivate');
-  },750);
-  setTimeout(function(){
-    var $eq=$('nav.main>.tab').index($('nav.main>.active'));
-    var $active=$('#grid_wrapper>card').eq($eq).find('div');
-    $('#content_wrapper>div.clone').animate({
-      top:$active.offset().top - $(window).scrollTop() +$active.height()/2,
-      left:$active.offset().left- $(window).scrollLeft() +$active.width()/2,
-      height:$active.height(),
-      width:$active.width()
-    },700,'easeOutCubic',function(){
-      setTimeout(function(){
-      $('#content_wrapper>div.clone').remove();
-      $('#grid_wrapper>card>div').removeClass('active');
-      });
-    });
-    $('#content_wrapper').addClass('inactive');
-  },500);
-});
-    </script>
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  color: #fefffe;
+  background: #111;
+}
+
+body p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 544px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+button, .btn {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.display-flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 544px) {
+  .display-flex-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 5rem;
+  margin: 1.5625rem 0 0;
+  border-radius: 2px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.btn-outline-teal, .btn-outline-purple {
+  color: #00d8b2;
+  border: 2px solid #00d8b2;
+}
+
+.btn-outline-teal:hover, .btn-outline-purple:hover {
+  background-color: #00d8b2;
+  color: #ffffff;
+}
+
+.btn-outline-purple {
+  color: #5458FF;
+  border: 2px solid #5458FF;
+}
+
+.btn-outline-purple:hover {
+  background-color: #5458FF;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-wrapper-sm {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content-wrapper {
+  position: relative;
+  padding: 5rem 20%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content-wrapper-lg {
+  position: relative;
+  padding: 12rem 20%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  z-index: 1;
+  margin-top: 1.5rem;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #00d8b2;
+  border-radius: 0;
+  color: #00d8b2;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+
+.contact-form .form-group input:focus, .contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-form .form-group input:focus ~ label,
+.contact-form .form-group input:valid ~ label,
+.contact-form .form-group textarea:focus ~ label,
+.contact-form .form-group textarea:valid ~ label {
+  top: -1.1rem;
+  left: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.contact-form .form-group label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  color: #fefffe;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+}
+
+#menu-button {
+  cursor: pointer;
+  padding: 0.5rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+}
+
+#menu-button .bar1, #menu-button .bar2, #menu-button .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fefffe;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+          transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.main-nav {
+  display: block;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav > .content-wrapper-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.main-nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav .nav-links {
+  position: relative;
+  top: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  overflow: hidden;
+  height: 0;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .main-nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+}
+
+.main-nav .nav-links li {
+  margin: 1rem;
+  text-align: center;
+}
+
+.main-nav .nav-links li a {
+  color: #fefffe;
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav .nav-open {
+  position: absolute;
+  top: 133%;
+  width: 100%;
+  display: block;
+  height: auto;
+  background: #111;
+}
+
+.main-nav .nav-open li {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav .nav-open li a {
+  padding: 2rem 0;
+}
+
+.fixed-nav {
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 3.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (min-width: 544px) {
+  header h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 6.25rem;
+  }
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.img-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#map {
+  height: 350px;
+  width: 100%;
+}
+
+footer {
+  padding: 2rem;
+}
+
+footer .social-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-links ul li {
+  margin: 1rem;
+  text-align: center;
+}
+
+footer .social-links ul li a {
+  font-size: 1.5rem;
+  color: #fefffe;
+  display: block;
+}
+        </style>
+</head>
 <body>
-<nav class='main hList inactive'>
-  <div class="tab active"><span>About</span></div><!--
-  --><div class="tab"><span>Work</span></div><!--
-  --><div class="tab"><span>Profiles</span></div><!--
-  --><div class="tab" ><span>Store</span></div><!--
-  --><div class="tab" ><span>Tours</span></div><!--
-  --><div class="tab" ><span>Videos</span></div><!--
-  --><div class="tab" ><span>News</span></div><!--
-  --><div class="tab" ><span>Underground</span></div><!--
-  --><div class="tab" ><span>Connect</span></div>
-</nav>
-<page id="home">
-  <span class="pagetag">#HOMEPAGE</span>
-  <section class="header">
-    <div>
-      <h2><span>W</span><span>ELCOME</span></h2>
-      <h5>COLDPLAY</h5>
-    </div>
-    <div class='logo'></div>
-  </section>
-  <section id="grid_wrapper" class="init">
-    <card>
-      <div>
-        <span>ABOUT</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>WORK</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>PROFILES</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>STORE</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>TOURS</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>VIDEOS</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>NEWS</span>
-      </div>
-    </card>
-    <card>
-      <div>
-        <span>UNDERGROUND</span>
-      </div>
-    </card>
-  </section>
-</page>
-<div id="content_wrapper" class='inactive'>
-  <button class="close">&#xf00d;</button>
-  <div class='content'>
-    <section>
-      <h2>#1</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#2</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#3</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#4</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#5</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#6</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#7</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
-    <section>
-      <h2>#8</h2>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-      <p>
-        Here's some random shit for this random tab on this random template.
-      </p>
-    </section>
+    <!-- Main Navigation -->
+<nav class="main-nav" id="main-nav">
+ <div class="content-wrapper-sm">
+  <a href="{{ route('homepage')}}" class="navbar-brand">Kuik Resume</a>
+  <div id="menu-button">
+   <div class="bar1"></div>
+   <div class="bar2"></div>
+   <div class="bar3"></div>
   </div>
-</div>
-<div id="footer">
-  <span style="display:block;font-size:0.9em;line-height:55px;"><span style="display:inline-block;">&copy; <span style="font-family:'Titillium Web';font-weight:900;letter-spacing:0.06em">CALVRIX</span> Design 2016</span></span>
-  <span style="display:block;font-size:0.7em;line-height:30px;margin-top:-25px;color:rgba(255,255,255,0.15)">&lang; !--kidding obviously-- &rang;<span>
-</div>
+  <ul class="nav-links">
+   <li><a href="#about">About</a></li>
+   <li><a href="{{ route('register')}}">Register</a></li>
+   <li><a href="{{ route('login')}}">Log in</a></li>
+   <li><a href="{{ route('contactnumber')}}">Contact</a></li>
+
+  </ul>
+ </div>
+</nav>
+
+<!-- Main header -->
+<header>
+ <!-- First replaceble image -->
+ <img class="" src="" alt="">
+ <div class="wrapper astonish animated fadeInDown">
+  <h1><strong>Resume</strong>Builder</h1>
+  <h2>The best resume are we created to satisfy the customer in Digital Resume & Physical Resume<br>
+                    Created by Tester.</h2>
+ </div>
+</header>
+
+<!-- Main content -->
+<main>
+ <div class="content-wrapper" id="about">
+  <!-- second replaceble image -->
+  <img class="" src="" alt="">
+  <div class="grid">
+   <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+    <h2 class="section-title">About Kuik Resume</h2>
+    <p>CityScapes is a fully responsive and customizable landing page template. All images can easily be replaced from the html side, without having to dig through the css.</p>
+    <p>The full version of this template is available at Github and it comes with the SASS files in order to provide quicker customization features, for those who are developers.</p>
+    <p>Javascript files are also included, they are used to enhance the user experience but apart from the menu.js file, they are all optional.</p>
+   </div>
+  </div>
+ </div>
+
+ <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
+  <h2 class="section-title">Explore New Pathways</h2>
+  <p>CityScapes is great for any travel agency or tour agency, that wishes to showcase the focal points of a city. If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go
+   ahead and download it for free from Github.</p>
+  <a href="https://github.com/Jesus-E-Rodriguez/cityscapes-landing-page" class="btn btn-outline-purple" target="_blank">Download</a>
+ </div>
+
+ <div class="content-wrapper" id="contact">
+  <!-- Third replaceble image -->
+  <img class="" src="" alt="">
+
+
+  
+
+
+ <!-- This is an embedded Google map, this is easily customizable especially if you get a Google API key, this will allow for more customizable features. -->
+ <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d81584.50435706123!2d-80.8378430874413!3d35.23358937843391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1514142608486" frameborder="0" style="border:0" allowfullscreen></iframe>
+</main>
+
+<!-- Main footer -->
+<footer>
+ <div class="content-wrapper-sm display-flex-between">
+  <!-- Easily replaceble copyright information -->
+  <small>Your copyright 2022.</small>
+
+  <!-- Make sure to edit the links so that they go to your social media. -->
+  <div class="social-links">
+   <ul>
+    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+   </ul>
+  </div>
+ </div>
+</footer>
 </body>
 </html>

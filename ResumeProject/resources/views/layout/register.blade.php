@@ -33,11 +33,11 @@
 }
 
 .btn-facebook {
-    background-color: #405D9D;
+    background-color: #404040;
     color: #fff;
 }
 .btn-twitter {
-    background-color: #42AEEC;
+    background-color: #404040;
     color: #fff;
 }
 
@@ -110,23 +110,10 @@
         <input class="form-control" placeholder="Repeat password" type="password">
     </div> <!-- form-group// -->                                      
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        <button type="submit" class="btn  btn-block"> Create Account  </button>
     </div> <!-- form-group// -->      
     <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
 </form>
-</article>
-</div> <!-- card.// -->
-
-</div>
-<!--container end.//-->
-<article class="bg-secondary mb-4">  
-<div class="card-body text-center">
-    <h3 class="text-white mt-3">For more details contact us <br> 013-48463484</h3>
-    <h3 class="text-white mt-3">OR <br></h3>
-    <h3 class="text-white mt-3">Email us on  <br> testing @testing.com</h3>
-<p class="h5 text-white"></i></a></p>
-</div>
-
 </article>
     
 </body>
