@@ -32,7 +32,7 @@
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->name}}
                         <td>{{ $user->email }}</td>
-                        <td> {{$user->phone_number}}</td>
+                        <td>{{ $user->phone_number}}</td>
                      
                        
                         <td><a href="#"><button class="btn btn-primary"type="submit">Edit</button></a></td>
