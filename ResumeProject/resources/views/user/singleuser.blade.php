@@ -61,7 +61,7 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="{{ route('homepage')}}" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -115,7 +115,39 @@ body, html {
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester1</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester2</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:86%">86%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester3</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester4</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester5</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester6</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester7</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester8</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Tester9</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
@@ -155,40 +187,39 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/Beta-Testing-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Beta Testing System">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="https://inspiration.nlogic.ca/hubfs/debugging2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Debug the System">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="https://cdn.acodez.in/wp-content/uploads/2021/08/bootstrap-web-development.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Boostrap The System">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/004/865/921/small_2x/programmer-people-concept-use-laptop-and-programming-code-program-icon-spreading-with-modern-flat-style-free-vector.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CSS coding">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61tUQMO8K4lHNXDWqcZWJJYdnk0A-_5hzEw&usqp=CAU.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="HTML">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="https://stackify.com/wp-content/uploads/2018/10/JavaScript-Tutorials-for-Beginners.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="JS">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/What-is-Laravel.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Laravel">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="https://hsc-global.my/wp-content/uploads/2022/08/Wordpress-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wordpress">
     </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+
 </div>
 
 <!-- Modal for full size images on click-->
@@ -204,40 +235,31 @@ body, html {
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
+  
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<br>
+<br>
+<br><br><br>
   <h3 class="w3-center">WHERE I WORK</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+    <div class="">
       <img src="" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge "></i> Malaysia,Kuala Terengganu<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge"></i> Phone:6013-7316146<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge "></i> Email: alluqmanqashyaffazmi@gmail.com<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      <br>
+      
     </div>
+  </div>
+</div>
+  </div>
   </div>
 </div>
 
@@ -245,14 +267,14 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-github w3-hover-opacity"></i>
-    <i class="fa fa-google -p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.google.com/" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/challenge/?next=https%3A%2F%2Fwww.instagram.com%2F%3F__coig_challenged%3D1"  class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://github.com/Qashyaff/ProjectExternal"  class="fa fa-github w3-hover-opacity"></a>
+    <a href="https://gitlab.com/luqmanqashyaff/ProjectExternal"  class="fa fa-gitlab w3-hover-opacity"></a>
+    <a href="https://twitter.com/i/flow/login"  class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/al-luqman-qashyaff-248305197/" class="fa fa-linkedin w3-hover-opacity"></a>
   </div>
-  <p>created by : AL-Luqman Qashyaff </a></p>
+ 
 </footer>
  
 <script>

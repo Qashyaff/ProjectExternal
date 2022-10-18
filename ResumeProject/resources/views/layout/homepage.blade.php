@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="icon" type="image/png" href="https://www.freeiconspng.com/thumbs/resume-icon-png/resume-icon-png-15.png">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
@@ -918,7 +918,7 @@ footer .social-links ul li a {
 
 <nav class="main-nav" id="main-nav">
  <div class="content-wrapper-sm">
-  <a href="{{ route('homepage')}}" class="navbar-brand"> BR</a>
+  <a href="{{ route('homepage')}}" class="navbar-brand"> MR</a>
   <div id="menu-button">
    <div class="bar1"></div>
    <div class="bar2"></div>
@@ -926,9 +926,7 @@ footer .social-links ul li a {
   </div>
   <ul class="nav-links">
    <li><a href="#about">About</a></li>
-   <li><a href="{{ route('register')}}">Register</a></li>
-   <li><a href="{{ route('login')}}">Log in</a></li>
-   <li><a href="{{ route('contactnumber')}}">Contact</a></li>
+   <li><a href="{{ route('myresume')}}">My Resume</a></li>
 
   </ul>
  </div>
@@ -939,8 +937,8 @@ footer .social-links ul li a {
  <!-- First replaceble image -->
  <img class="" src="" alt="">
  <div class="wrapper astonish animated fadeInDown">
-  <h1><strong>Resume</strong>Builder</h1>
-  <h2>The best resume are we created to satisfy the customer in Digital Resume & Physical Resume<br>
+  <h1><strong>My</strong> Homepage Project</h1>
+  <h2> To satisfy the customer in Digital Resume & Physical Resume<br>
                     Created by Tester.</h2>
  </div>
 </header>
@@ -952,7 +950,7 @@ footer .social-links ul li a {
   <img class="" src="" alt="">
   <div class="grid">
    <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
-    <h2 class="section-title">About Kuik Resume</h2>
+    <h2 class="section-title">About  Resume</h2>
     <p>CityScapes is a fully responsive and customizable landing page template. All images can easily be replaced from the html side, without having to dig through the css.</p>
     <p>The full version of this template is available at Github and it comes with the SASS files in order to provide quicker customization features, for those who are developers.</p>
     <p>Javascript files are also included, they are used to enhance the user experience but apart from the menu.js file, they are all optional.</p>
@@ -962,7 +960,7 @@ footer .social-links ul li a {
 
  <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
   <h2 class="section-title">Explore New Pathways</h2>
-  <p>CityScapes is great for any travel agency or tour agency, that wishes to showcase the focal points of a city. If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go
+  <p> If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go
    ahead and download it for free from Github.</p>
   <a href="https://github.com/Qashyaff/ProjectExternal/tree/alluqmanbranch" class="btn btn-outline-purple" target="_blank">Download</a>
  </div>

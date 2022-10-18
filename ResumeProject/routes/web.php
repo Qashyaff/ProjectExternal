@@ -53,7 +53,8 @@ Route::namespace('User')->group(function() {
     Route::get('/facebook', function () {return view('Userportfolio.facebookpage');})->name('facebook');
     Route::get('/twitter', function () {return view('Userportfolio.twitterpage');})->name('twitter');
     Route::get('/instagram', function () {return view('Userportfolio.instagrampage');})->name('instagram');
-    Route::get('/contactnumber', function () {return view('Userportfolio.contactnumberpage');})->name('contactnumber');
+    Route::get('/myeresume', function () {return view('User.singleuser');})->name('myresume');
+   
 
    
 });
