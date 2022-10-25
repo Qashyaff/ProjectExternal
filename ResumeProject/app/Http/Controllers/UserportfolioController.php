@@ -79,9 +79,12 @@ class UserportfolioController extends Controller
      * @param  \App\Models\Userportfolio  $userportfolio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Userportfolio $userportfolio)
+    public function update($id)
     {
-        //
+        $user = User::findOrFail($id);
+
+       
+        return view('user.update',['user'=>$user]);
     }
 
     /**

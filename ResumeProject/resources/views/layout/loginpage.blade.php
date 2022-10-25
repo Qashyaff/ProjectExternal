@@ -74,6 +74,7 @@
           </div>
           <div class="control-group">
             <input class="btn btn-light btn-large btn-block" type="submit" value="Sign in"> 
+            <a href="{{ route('register')}}"> Register</a>
           </div>
         </form>
       </div><!--/.login-->

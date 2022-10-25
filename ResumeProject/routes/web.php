@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\UserportfolioController;
 
 
@@ -33,7 +34,7 @@ Route::get('/', function () {
 
 //users platform eitehr on facebook,instagram,twitter and their contact number
 //mainhomepage
-Route::get('/homepage', function () {return view('layout.homepage');})->name('homepage');
+Route::get('/homepage', function () {return view('welcome');})->name('homepage');
 
 //task need to complete the project
 /*
@@ -53,15 +54,29 @@ Route::namespace('User')->group(function() {
     Route::get('/facebook', function () {return view('Userportfolio.facebookpage');})->name('facebook');
     Route::get('/twitter', function () {return view('Userportfolio.twitterpage');})->name('twitter');
     Route::get('/instagram', function () {return view('Userportfolio.instagrampage');})->name('instagram');
-    Route::get('/myeresume', function () {return view('User.singleuser');})->name('myresume');
-   
+    Route::get('/myresume', function () {return view('User.singleuser');})->name('myresume');
+});
 
-   
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+    Route::get('/login', [AdminAuthController::class, 'getLogin'])->name('adminLogin');
+    Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
+ 
+    Route::group(['middleware' => 'adminauth'], function () {
+        Route::get('/', function () {
+            return view('user.listinguser');
+        })->name('adminDashboard');
+ 
+    });
 });
 // middleware admin = login admin
 // 
+// resume project 
+//users -> homepage
+//homepage->users
+   // Route::get('/userlisting', [UserportfolioController::class,'index']);
+    Route::get('/userupdate', [UserportfolioController::class,'update'])->name('update');
 
-    Route::get('/userlisting', [UserportfolioController::class,'index']);
     Route::get('/users/{id}', [UserportfolioController::class, 'show']);
 // register 
 
