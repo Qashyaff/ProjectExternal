@@ -14,6 +14,7 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
-        "animate.css": "^4.1.1"
+        "animate.css": "^4.1.1",
+        "nanobar": "^0.4.2"
     }
 }

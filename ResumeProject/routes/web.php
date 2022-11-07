@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PDFController;
+use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\UserportfolioController;
 
@@ -24,6 +26,7 @@ SOCIAL MEDIA USER
 4.Update where the user can update their social media for latest one
 5.Delete where the user can delete their social media for latest 1 and to update new one
 */
+Route::get('/generate-pdf', [PDFController::class, 'generatePDF'])->name('generatePDF');
 
 Route::get('/', function () {
     return view('welcome');
