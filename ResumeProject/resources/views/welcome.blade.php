@@ -475,7 +475,7 @@ body {
  background-image:url('https://cdn.dribbble.com/users/1373613/screenshots/6200333/__1.gif'); 
  background-repeat: no-repeat;
   background-position: center center;
-  background-size: 8000px 10000px;
+  background-size: 8000px 12000px;
 }
 
 body p {
@@ -1064,13 +1064,16 @@ footer .social-links ul li a {
 </head>
 <body>
      <!-- Main Navigation -->
-
+   
 <nav class="main-nav" id="main-nav">
- <div class="content-wrapper-sm">
+<div style="float:right">
+  <img src="" alt="" width="10" length="30"> </div>
+
+<br><br><br><br>
+<div class="content-wrapper-sm">
     <div>
     <section class="cubecontainer" >
-      
-      
+
       <div id="cube">
         <figure class="front">
             <h2>MR</h2>
@@ -1084,7 +1087,7 @@ footer .social-links ul li a {
        
       </div>
     </section>
-        
+
 </div>
   <div id="menu-button">
    <div class="bar1"></div>
@@ -1103,6 +1106,8 @@ footer .social-links ul li a {
  <div id="demo">
   
 <div class="container">
+  <br><br>
+  <br><br>
     <h1><span class="auto-type"></span></h1>
 </div>
 
@@ -1142,6 +1147,7 @@ footer .social-links ul li a {
  <div class="content-wrapper-sm display-flex-between">
   <!-- Easily replaceble copyright information -->
   <medium>Your copyright 2022 &#127875;</medium>
+ 
   
 
   <!-- Make sure to edit the links so that they go to your social media. -->
@@ -1171,7 +1177,7 @@ footer .social-links ul li a {
 
 <script>
     var typed=new Typed(".auto-typess",{
-        strings:["Created By Qash"],
+        strings:["Created By Tester"],
         typeSpeed:500,
        
     })
@@ -1292,6 +1298,11 @@ window.requestAnimationFrame(updateCanvas);
       
 </script>
 
+
+<script>
+  //before load the entire page
+ // after load the entire page
+</script>
 
 
 </body>
